@@ -1,0 +1,57 @@
+form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.simulador {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.forms {
+  display: flex;
+  flex-direction: row;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+@media screen and (max-width: 1300px) {
+  .result {
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .result {
+    margin-left: 8%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .result {
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+  .simulador {
+    flex-direction: column;
+  }
+  .result {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 446px;
+  }
+}
+
