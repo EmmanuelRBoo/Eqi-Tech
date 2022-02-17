@@ -28,7 +28,6 @@ export const GraphV = () => {
   const semAporte = res.graficoValores.semAporte;
 
   const opt = {
-    maintainAspectRatio: false,
     plugins: {
       title: {
         display: false,
@@ -54,7 +53,7 @@ export const GraphV = () => {
         },
         title: {
           display: true,
-          text: 'Tempo (em meses)'
+          text: 'Valor (R$)'
         }
       },
     },
