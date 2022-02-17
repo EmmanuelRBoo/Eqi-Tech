@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
 import Context from '../context/Context';
 import '../styles/form.css';
+import '../styles/models.css';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { FaCheck } from 'react-icons/fa';
 import Input from './Input';
+import { Indexacao } from './Models';
 
 const FormRight = () => {
   const { 
@@ -36,9 +38,8 @@ const FormRight = () => {
       >
         <div className="form-radio-title m">
           <p className="m">Tipos de indexação</p>
-          <div className="info-btn"
-          // onMouseOver={() => }  
-          >
+          <div className="info-btn model-indexacao">
+            <Indexacao />
             <AiOutlineInfoCircle size={20} />
           </div>
         </div>

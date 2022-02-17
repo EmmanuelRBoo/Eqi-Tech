@@ -1,9 +1,11 @@
 import React, { useContext } from 'react';
 import Context from '../context/Context';
 import '../styles/form.css';
+import '../styles/models.css';
 import { AiOutlineInfoCircle } from 'react-icons/ai';
 import { FaCheck } from 'react-icons/fa';
 import Input from './Input';
+import { Rendimento } from './Models';
 
 const FormLeft = () => {
   const { 
@@ -28,9 +30,8 @@ const FormLeft = () => {
       >
         <div className="form-radio-title m">
           <p className="m">Rendimento</p>
-          <div className="info-btn"
-          // onMouseOver={() => }  
-          >
+          <div className="info-btn model-rendimento">
+            <Rendimento />
             <AiOutlineInfoCircle size={20} />
           </div>
         </div>
