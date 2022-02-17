@@ -1,0 +1,38 @@
+.models {
+  background-color: rgb(240, 240, 240);
+  border: 1px solid black;
+  font-size: 12px;
+  opacity: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 4px;
+  position: absolute;
+  transition: visibility 0s, opacity 0.3s linear;
+  visibility: hidden;
+  width: 190px;
+  z-index: 0;
+}
+
+.model-rendimento:hover .rendimento {
+  opacity: 100%;
+  visibility: visible;
+}
+
+.model-indexacao:hover .indexacao {
+  opacity: 100%;
+  visibility: visible;
+}
+
+@media screen and (max-width: 640px) {
+  .models {
+    margin-left: 0;
+  }
+
+  .rendimento {
+    left: 26px;
+  }
+
+  .indexacao {
+    left: 258px;
+  }
+}
